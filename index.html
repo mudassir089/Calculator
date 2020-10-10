@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple Calculator</h1>
+
+      <div class="calculator">
+        <div class="result">
+          <div class="history">
+            <p class="history-value"></p>
+          </div>
+          <div class="output">
+            <p id="result"></p>
+          </div>
+        </div>
+
+        <div class="keyboard">
+          <button onclick="clearResult()" class="operator a">C</button>
+          <button onclick="back()" class="operator b">⌦</button>
+          <button onclick="getNumber('%')" class="operator c">%</button>
+          <button onclick="getNumber('/')" class="operator d">÷</button>
+          <div>
+            <button onclick="getNumber('7')" class="number">7</button>
+            <button onclick="getNumber('8')" class="number">8</button>
+            <button onclick="getNumber('9')" class="number">9</button>
+            <button onclick="getNumber('*')" class="operator e">X</button>
+          </div>
+          <div>
+            <button onclick="getNumber('4')" class="number">4</button>
+            <button onclick="getNumber('5')" class="number">5</button>
+            <button onclick="getNumber('6')" class="number">6</button>
+            <button onclick="getNumber('-')" class="operator f">-</button>
+          </div>
+          <div>
+            <button onclick="getNumber('1')" class="number">1</button>
+            <button onclick="getNumber('2')" class="number">2</button>
+            <button onclick="getNumber('3')" class="number">3</button>
+            <button onclick="getNumber('+')" class="operator g">+</button>
+            <button class="empty"></button>
+          </div>
+          <div>
+            <button onclick="getNumber('0')" class="number">0</button>
+            <button class="empty"></button>
+            <button onclick="getResult()" class="operator h">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

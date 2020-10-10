@@ -1,0 +1,129 @@
+body {
+  font-family: sans-serif;
+  background: #780206; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #061161,
+    #780206
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #061161,
+    #780206
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  margin: 20px auto;
+}
+
+.calculator {
+  width: 320px;
+  height: 520px;
+  background: #c04848; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #480048,
+    #c04848
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #480048,
+    #c04848
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 0 auto;
+  position: relative;
+  top: 20px;
+  border-radius: 5px;
+}
+.result {
+  height: 120px;
+}
+.history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #919191;
+}
+.output {
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  font-size: 30px;
+}
+p {
+  overflow: hidden;
+}
+h1 {
+  text-align: center;
+  color: #c04848;
+  font-weight: lighter;
+  font-size: 50px;
+}
+
+.keyboard {
+  height: 400px;
+}
+.operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-size: 18px;
+}
+
+.number,
+.empty {
+  background: none;
+}
+.operator,
+.number {
+  cursor: pointer;
+}
+.operator:active,
+.number:active {
+  font-size: 20px;
+}
+.operator:focus,
+.number:focus,
+.empty:focus {
+  outline: 0;
+}
+
+.a {
+  background-color: whitesmoke;
+  font-size: 20px;
+}
+.b {
+  background-color: #780206;
+  font-size: 20px;
+}
+.c {
+  background-color: skyblue;
+  font-size: 20px;
+}
+.d {
+  background-color: teal;
+  font-size: 20px;
+}
+.e {
+  background-color: orange;
+  font-size: 20px;
+}
+.f {
+  background-color: green;
+  font-size: 20px;
+}
+.g {
+  background-color: #061161;
+  font-size: 20px;
+}
+.h {
+  background-color: #480048;
+}
